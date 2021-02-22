@@ -1,6 +1,6 @@
 package com.example.SpringBoot.dto;
 
-public class MyRequestDTO {
+public class SearchRequestDTO {
     private String searchTerm;
 
     public String getSearchTerm() {
@@ -11,9 +11,5 @@ public class MyRequestDTO {
         this.searchTerm = searchTerm;
     }
 
-    @Override
-    public String toString() {
-        return "searchTerm='" + searchTerm + '\'' +
-                '}';
-    }
+
 }
