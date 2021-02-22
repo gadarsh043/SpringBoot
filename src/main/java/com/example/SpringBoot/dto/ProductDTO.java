@@ -4,7 +4,10 @@ public class ProductDTO {
     private String title;
     private boolean isInStock;
     private String description;
-    private int salePrice;
+    private Double salePrice;
+
+    public static void get(String name) {
+    }
 
     public String getTitle() {
         return title;
@@ -19,7 +22,7 @@ public class ProductDTO {
     }
 
     public void setInStock(boolean inStock) {
-        isInStock = inStock;
+        this.isInStock = inStock;
     }
 
     public String getDescription() {
@@ -30,11 +33,11 @@ public class ProductDTO {
         this.description = description;
     }
 
-    public int getSalePrice() {
+    public Double getSalePrice() {
         return salePrice;
     }
 
-    public void setSalePrice(int salePrice) {
+    public void setSalePrice(Double salePrice) {
         this.salePrice = salePrice;
     }
 }
